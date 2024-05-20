@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GIVP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #050505;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('imatges/vinyes.jpeg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#SOBRE NOSALTRES" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SOBRE NOSALTRES</a>
+    <a href="#PROJECTES" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTES</a>
+    <a href="#MAPES" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-map-marker"></i>MAPES</a>
+    <a href="#CONTACTE" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>CONTACTE</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#sobre nosaltres" class="w3-bar-item w3-button" onclick="toggleFunction()">SOBRE NOSALTRES</a>
+    <a href="#projectes" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTES</a>
+    <a href="#mapes" class="w3-bar-item w3-button" onclick="toggleFunction()">MAPES</a>
+    <a href="#contacte" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTE</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="SOBRE NOSALTRES">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">GRUP INVESTIGACIÓ <span class="w3-hide-small">VINYES</span> DEL PRIORAT</span>
+  </div>
+</div>
+<body>
+  <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <head></head>
+        <style>
+            .image-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .image-container img {
+                max-width: 100%;
+                height: auto;
+            }
+            .image-caption {
+                text-align: center;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="image-container">
+            <div>
+                <img src="imatges/ff.jpg" alt="Arnau Fargas Navarro" width="500" height="500">
+                <p class="image-caption">Arnau Fargas Navarro</p>
+            </div>
+            <div>
+                <img src="imatges/azuara.jpg" alt="David Azuara" width="300" height="500">
+                <p class="image-caption">David Azuara</p>
+            </div>
+            <div>
+                <img src="imagen3.jpg" alt="Imagen 3">
+                <p class="image-caption">Texto para la imagen 3</p>
+            </div>
+        </div>
+</body>
+   
